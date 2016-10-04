@@ -1,0 +1,6 @@
+image: small_simple.tif
+resolution: 0.05
+origin: [-2.525, -2.525, 0]
+occupied_thresh: 0.65
+free_thresh: 0.195
+negate: 0

@@ -1,0 +1,21 @@
+<!-- This plays the demo with kobuki and specified lidar  -->
+<launch>
+
+	<arg name="lidar" default="rplidar"/>
+	<arg name="record_all" default="0"/>
+
+	<env name="ROSCONSOLE_FORMAT" value='[${node}] [${severity}] [${time}]: ${message}'/>
+	
+	<group if="$(arg record_all)">
+		<node pkg="rosbag" type="record" name="record" args="-a -o /tmp/demo_"/>
+	</group>
+
+	<include file="$(find bob_launch)/launch/$(arg lidar).launch"/>
+
+	<include file="$(find bob_launch)/launch/kobuki_core.launch"/>
+
+	<node pkg="bob_demo" type="demo_limited_lidar" name="demo_limited_lidar" output="screen" launch-prefix="gdb --args">
+		<rosparam command="load" file="$(find bob_config)/param/config.yaml"/>
+	</node>
+
+</launch>

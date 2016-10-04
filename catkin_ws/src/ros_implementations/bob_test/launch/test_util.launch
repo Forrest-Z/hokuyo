@@ -1,0 +1,50 @@
+<!-- Launch file used in conjunction with bob_test_util. -->
+<launch>
+
+        <arg name="node" default="empty"/>
+	<arg name="lidar" default="empty"/>
+	<arg name="kobuki" default="0"/>
+	<arg name="generate_map" default="0"/>
+        <arg name="record" default="0"/>
+        <arg name="launch_prefix" default=""/>
+        <arg name="keyop" default="0"/>
+        <arg name="slam" default="0"/>
+        <arg name="node_enabled" default="0"/>
+        
+	<!-- Logging output format -->
+	<env name="ROSCONSOLE_FORMAT" value='[${node}] [${severity}] [${time}]: ${message}'/>
+
+        <!-- kobuki core -->
+        <group if="$(arg kobuki)">
+		<include file="$(find bob_launch)/launch/kobuki_core.launch"/>
+	</group>
+
+        <!-- lidar -->
+	<include file="$(find bob_launch)/launch/$(arg lidar).launch"/>
+
+        <!-- generate_maop -->
+	<group if="$(arg generate_map)">
+		<include file="$(find bob_launch)/launch/basic_map.launch"/>
+	</group>
+
+        <!-- record -->
+        <group if="$(arg record)">
+		<node pkg="rosbag" type="record" name="record" args="-a -o /tmp/demo_"/>
+	</group>
+        
+        <!-- record -->
+        <group if="$(arg keyop)">
+		<include file="$(find bob_launch)/launch/kobuki_keyop.launch"/>
+	</group>
+
+        <group if="$(arg slam)">
+		<node pkg="bob_test" type="slam" name="slam"/>
+	</group>
+
+        <!-- node -->
+        <group if="$(arg node_enabled)">
+		<node pkg="bob_test" type="$(arg node)" name="$(arg node)" output="screen" launch-prefix="$(arg launch_prefix)">	
+			<rosparam command="load" file="$(find bob_config)/param/config.yaml"/>
+		</node>
+	</group>
+</launch>

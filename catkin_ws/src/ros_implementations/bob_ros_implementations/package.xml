@@ -1,0 +1,40 @@
+<package>
+  <name>bob_ros_implementations</name>
+  <version>0.0.0</version>
+  <description>Description not yet provided</description>
+
+  <maintainer email="sebastian@bobsweep.com">Sebastian Schweigert</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>kobuki_msgs</build_depend>
+  <build_depend>bob_toolbox</build_depend>
+  <build_depend>bob_tf</build_depend>
+  <build_depend>bob_sensor</build_depend>
+  <build_depend>bob_lidar</build_depend>
+  <build_depend>bob_control</build_depend>
+  <build_depend>bob_slam</build_depend>
+  <build_depend>bob_control_handle</build_depend>
+  <build_depend>bob_system</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>kobuki_msgs</run_depend>
+  <run_depend>bob_toolbox</run_depend>
+  <run_depend>bob_tf</run_depend>
+  <run_depend>bob_sensor</run_depend>
+  <run_depend>bob_lidar</run_depend>
+  <run_depend>bob_control</run_depend>
+  <run_depend>bob_slam</run_depend>
+  <run_depend>bob_control_handle</run_depend>
+  <run_depend>bob_system</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>visualization_msgs</run_depend>
+
+  <export>
+  </export>
+</package>
