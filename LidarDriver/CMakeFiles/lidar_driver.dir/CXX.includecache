@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hao/LidarDriver/lidar_driver.cpp
+robotleo_lidar_driver.hpp
+/home/hao/LidarDriver/robotleo_lidar_driver.hpp
+stdio.h
+-
+vector
+-
+iostream
+-
+fstream
+-
+
+/home/hao/LidarDriver/robotleo_lidar_driver.hpp
+vector
+-
+

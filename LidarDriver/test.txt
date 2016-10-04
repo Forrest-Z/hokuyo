@@ -1,0 +1,241 @@
+Measurement by RoboLeo.
+Number of the measurement: 1
+degree -1 distance: 730
+degree -0.5 distance: 729
+degree 0 distance: 729
+degree 0.5 distance: 729
+degree 1 distance: 730
+Number of the measurement: 2
+degree -1 distance: 730
+degree -0.5 distance: 730
+degree 0 distance: 731
+degree 0.5 distance: 731
+degree 1 distance: 731
+Number of the measurement: 3
+degree -1 distance: 731
+degree -0.5 distance: 732
+degree 0 distance: 732
+degree 0.5 distance: 731
+degree 1 distance: 731
+Number of the measurement: 4
+degree -1 distance: 729
+degree -0.5 distance: 729
+degree 0 distance: 729
+degree 0.5 distance: 729
+degree 1 distance: 729
+Number of the measurement: 5
+degree -1 distance: 730
+degree -0.5 distance: 730
+degree 0 distance: 730
+degree 0.5 distance: 731
+degree 1 distance: 732
+Number of the measurement: 6
+degree -1 distance: 729
+degree -0.5 distance: 729
+degree 0 distance: 729
+degree 0.5 distance: 731
+degree 1 distance: 732
+Number of the measurement: 7
+degree -1 distance: 731
+degree -0.5 distance: 731
+degree 0 distance: 731
+degree 0.5 distance: 731
+degree 1 distance: 731
+Number of the measurement: 8
+degree -1 distance: 730
+degree -0.5 distance: 730
+degree 0 distance: 729
+degree 0.5 distance: 729
+degree 1 distance: 729
+Number of the measurement: 9
+degree -1 distance: 731
+degree -0.5 distance: 729
+degree 0 distance: 728
+degree 0.5 distance: 728
+degree 1 distance: 728
+Number of the measurement: 10
+degree -1 distance: 731
+degree -0.5 distance: 731
+degree 0 distance: 731
+degree 0.5 distance: 731
+degree 1 distance: 731
+Number of the measurement: 11
+degree -1 distance: 731
+degree -0.5 distance: 731
+degree 0 distance: 731
+degree 0.5 distance: 731
+degree 1 distance: 731
+Number of the measurement: 12
+degree -1 distance: 732
+degree -0.5 distance: 731
+degree 0 distance: 730
+degree 0.5 distance: 730
+degree 1 distance: 730
+Number of the measurement: 13
+degree -1 distance: 732
+degree -0.5 distance: 732
+degree 0 distance: 730
+degree 0.5 distance: 730
+degree 1 distance: 731
+Number of the measurement: 14
+degree -1 distance: 732
+degree -0.5 distance: 732
+degree 0 distance: 731
+degree 0.5 distance: 731
+degree 1 distance: 731
+Number of the measurement: 15
+degree -1 distance: 732
+degree -0.5 distance: 732
+degree 0 distance: 731
+degree 0.5 distance: 731
+degree 1 distance: 731
+Number of the measurement: 16
+degree -1 distance: 732
+degree -0.5 distance: 732
+degree 0 distance: 730
+degree 0.5 distance: 730
+degree 1 distance: 731
+Number of the measurement: 17
+degree -1 distance: 731
+degree -0.5 distance: 731
+degree 0 distance: 731
+degree 0.5 distance: 730
+degree 1 distance: 731
+Number of the measurement: 18
+degree -1 distance: 731
+degree -0.5 distance: 730
+degree 0 distance: 730
+degree 0.5 distance: 730
+degree 1 distance: 730
+Number of the measurement: 19
+degree -1 distance: 731
+degree -0.5 distance: 731
+degree 0 distance: 731
+degree 0.5 distance: 731
+degree 1 distance: 731
+Number of the measurement: 20
+degree -1 distance: 732
+degree -0.5 distance: 732
+degree 0 distance: 730
+degree 0.5 distance: 730
+degree 1 distance: 730
+Number of the measurement: 21
+degree -1 distance: 731
+degree -0.5 distance: 731
+degree 0 distance: 730
+degree 0.5 distance: 730
+degree 1 distance: 731
+Number of the measurement: 22
+degree -1 distance: 732
+degree -0.5 distance: 730
+degree 0 distance: 729
+degree 0.5 distance: 730
+degree 1 distance: 730
+Number of the measurement: 23
+degree -1 distance: 730
+degree -0.5 distance: 730
+degree 0 distance: 729
+degree 0.5 distance: 730
+degree 1 distance: 730
+Number of the measurement: 24
+degree -1 distance: 731
+degree -0.5 distance: 731
+degree 0 distance: 731
+degree 0.5 distance: 731
+degree 1 distance: 731
+Number of the measurement: 25
+degree -1 distance: 731
+degree -0.5 distance: 731
+degree 0 distance: 731
+degree 0.5 distance: 730
+degree 1 distance: 731
+Number of the measurement: 26
+degree -1 distance: 731
+degree -0.5 distance: 731
+degree 0 distance: 730
+degree 0.5 distance: 730
+degree 1 distance: 731
+Number of the measurement: 27
+degree -1 distance: 732
+degree -0.5 distance: 731
+degree 0 distance: 731
+degree 0.5 distance: 731
+degree 1 distance: 731
+Number of the measurement: 28
+degree -1 distance: 732
+degree -0.5 distance: 732
+degree 0 distance: 732
+degree 0.5 distance: 732
+degree 1 distance: 732
+Number of the measurement: 29
+degree -1 distance: 732
+degree -0.5 distance: 732
+degree 0 distance: 732
+degree 0.5 distance: 730
+degree 1 distance: 730
+Number of the measurement: 30
+degree -1 distance: 732
+degree -0.5 distance: 732
+degree 0 distance: 732
+degree 0.5 distance: 731
+degree 1 distance: 731
+Number of the measurement: 31
+degree -1 distance: 732
+degree -0.5 distance: 732
+degree 0 distance: 732
+degree 0.5 distance: 730
+degree 1 distance: 730
+Number of the measurement: 32
+degree -1 distance: 732
+degree -0.5 distance: 732
+degree 0 distance: 732
+degree 0.5 distance: 730
+degree 1 distance: 730
+Number of the measurement: 33
+degree -1 distance: 732
+degree -0.5 distance: 731
+degree 0 distance: 730
+degree 0.5 distance: 730
+degree 1 distance: 730
+Number of the measurement: 34
+degree -1 distance: 732
+degree -0.5 distance: 732
+degree 0 distance: 732
+degree 0.5 distance: 731
+degree 1 distance: 731
+Number of the measurement: 35
+degree -1 distance: 732
+degree -0.5 distance: 731
+degree 0 distance: 731
+degree 0.5 distance: 731
+degree 1 distance: 731
+Number of the measurement: 36
+degree -1 distance: 731
+degree -0.5 distance: 730
+degree 0 distance: 730
+degree 0.5 distance: 730
+degree 1 distance: 731
+Number of the measurement: 37
+degree -1 distance: 732
+degree -0.5 distance: 730
+degree 0 distance: 730
+degree 0.5 distance: 730
+degree 1 distance: 732
+Number of the measurement: 38
+degree -1 distance: 732
+degree -0.5 distance: 730
+degree 0 distance: 730
+degree 0.5 distance: 730
+degree 1 distance: 730
+Number of the measurement: 39
+degree -1 distance: 729
+degree -0.5 distance: 729
+degree 0 distance: 729
+degree 0.5 distance: 731
+degree 1 distance: 732
+Number of the measurement: 40
+degree -1 distance: 730
+degree -0.5 distance: 730
+degree 0 distance: 730
+degree 0.5 distance: 731
+degree 1 distance: 731

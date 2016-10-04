@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(lidar_driver)
+
+set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
+
+add_library(robotleo_lidar_driver RobotLeoLidarDriver.cpp)
+
+add_executable(lidar_driver LidarDriver.cpp)
+
+target_link_libraries( lidar_driver robotleo_lidar_driver)
