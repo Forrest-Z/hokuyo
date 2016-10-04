@@ -1,0 +1,52 @@
+<package>
+  <name>bob_high_level</name>
+  <version>0.0.0</version>
+  <description>Description not yet provided</description>
+
+  <maintainer email="sebastian@bobsweep.com">Sebastian Schweigert</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>bob_map_algorithms</build_depend>
+  <build_depend>bob_grid_map</build_depend>
+  <build_depend>bob_toolbox</build_depend>
+  <build_depend>bob_control</build_depend>
+  <build_depend>bob_coverage</build_depend>
+  <build_depend>bob_config</build_depend>
+  <build_depend>bob_slam</build_depend>
+  <build_depend>bob_core</build_depend>
+  <build_depend>bob_sensor</build_depend>
+  <build_depend>bob_control_handle</build_depend>
+  <build_depend>bob_boustrophedon</build_depend>
+  <build_depend>bob_stc</build_depend>
+  <build_depend>bob_wall_following</build_depend>
+  <build_depend>bob_frontier_exploration</build_depend>
+  <build_depend>bob_navigation</build_depend>
+  <build_depend>bfl</build_depend>
+  <build_depend>bob_ros_implementations</build_depend>
+  <!-- Add more here... -->
+
+  <run_depend>bob_map_algorithms</run_depend>
+  <run_depend>bob_grid_map</run_depend>
+  <run_depend>bob_toolbox</run_depend>
+  <run_depend>bob_control</run_depend>
+  <run_depend>bob_coverage</run_depend>
+  <run_depend>bob_config</run_depend>
+  <run_depend>bob_slam</run_depend>
+  <run_depend>bob_core</run_depend>
+  <run_depend>bob_sensor</run_depend>
+  <run_depend>bob_control_handle</run_depend>
+  <run_depend>bob_boustrophedon</run_depend>
+  <run_depend>bob_stc</run_depend>
+  <run_depend>bob_wall_following</run_depend>
+  <run_depend>bob_frontier_exploration</run_depend>
+  <run_depend>bob_navigation</run_depend>
+  <run_depend>bfl</run_depend>
+  <run_depend>bob_ros_implementations</run_depend>
+  <!-- Add more here... -->
+
+  <export>
+  </export>
+</package>

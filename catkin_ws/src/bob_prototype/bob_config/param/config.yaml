@@ -1,0 +1,72 @@
+
+#########################################################################################
+# General/System wide
+#########################################################################################
+
+
+robot_radius: 0.177
+
+# All linear velocity commands will be limited to an absolute value less than this amount
+# This setting exists for safety in case some bug in a controller results in large
+# velocity commands.
+linear_velocity_bounds: 0.3
+
+# Same as safe_linear_velocity, but for angular velocity.
+angular_velocity_bounds: 2.5
+
+#########################################################################################
+# Control
+#########################################################################################
+
+# Rotation
+
+rotation_controller_frequency: 20
+
+rotation_max_velocity: 1.0
+
+rotation_acceleration: 1.0
+
+# Wall_following:
+
+# Proportional control co-efficient
+wall_follow_p: 15
+
+# Derivative control co-efficient
+wall_follow_d: 30
+
+wall_follow_distance: 0.03
+
+wall_follow_speed: 0.1
+
+#########################################################################################
+# Coverage 
+#########################################################################################
+
+# STC
+
+# The number of angles to try when determing the optimal grid
+# Effects performance of grid generation by O(n)
+stc_num_angles: 6
+
+# The number of positional shifts to try when determining the opimal grid
+# Effects performance of grid generation by O(n^2) since it must shift in x AND y
+stc_num_shifts: 2
+
+# The radius under the robot that will be covered
+stc_robot_coverage_radius: 0.170
+
+# The size of the grid, as a multiple of robot coverage radius
+# A multiple of 4 will perform "standard" STC, with no overlap
+# Any value less than 4 will result in overlap, but will give smaller grids,
+# resulting in better coverage in tight areas
+stc_grid_radius_multiple: 2.0
+
+#########################################################################################
+# SLAM 
+#########################################################################################
+
+map_resolution: 0.05
+
+# wrapper
+
+slam_transform_publish_period: 0.05

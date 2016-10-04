@@ -1,0 +1,20 @@
+<package>
+  <name>EXAMPLE_PKG</name>
+  <version>0.0.0</version>
+  <description>Description not yet provided</description>
+
+  <maintainer email="sebastian@bobsweep.com">Sebastian Schweigert</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend></build_depend>
+  <!-- Add more here... -->
+
+  <run_depend></run_depend>
+  <!-- Add more here... -->
+
+  <export>
+  </export>
+</package>

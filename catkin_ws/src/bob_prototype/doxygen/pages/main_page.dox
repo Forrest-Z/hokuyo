@@ -1,0 +1,13 @@
+/*!  \mainpage Welcome to the bObsweep Prototype Documentation!
+
+  # Useful pages 
+
+  \ref getting_started
+
+  \ref packages  
+
+  \ref ros_transition
+
+  \ref style_guide
+
+ */ 

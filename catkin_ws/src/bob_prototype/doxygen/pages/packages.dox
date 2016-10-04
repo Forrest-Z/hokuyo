@@ -1,0 +1,46 @@
+/*!  \page packages Packages 
+
+  ### High-level Packages
+
+  \ref bob_demo - Demo files, self-contained systems.
+
+  \ref bob_test - Files used to test isolated portions of code. Simple executables and launch files that are associated with them.
+ 
+  \ref bob_launch - Contains frequently re-used ROS launch files. These launch files are not self-contained and are building blocks used to make larger systems in bob_demo or bob_test.
+
+  ### SLAM Packages
+
+  \ref bob_slam - Contains Simulataneous Localization and Mapping (SLAM) algorithms.
+
+  \ref bob_grid_map - Defines map classes which represent discrete grid maps. These maps are filled by SLAM algorithms and that data is subsequently retrieved and used throughout the rest of the system.
+
+  ### Coverage Algorithms
+
+  \ref bob_coverage - Defines some coverage elements that are common to both coverage techniques implemented in the system.
+
+  \ref bob_boustrophedon - Defines a "zig-zag" coverage algorithm. Often referred to as "Boustrophedon" in literature.
+
+  \ref bob_stc - Defines a Spanning Tree Coverage (STC) coverage algorithm. 
+
+  ### Control
+
+  \ref bob_control - Low level control systems (Curve tracking, Rotating in place, Line Tracking, Wall Hugging, etc).
+
+  \ref bob_wall_following - A wall following module. Uses some control behaviors from bob_control to achieve a rhobust wall follower.
+
+  \ref bob_navigation - When given a goal position in the known map, this module will navigate the robot around obstacles until it reaches that goal.
+
+  ### Miscellaneous
+
+  \ref bob_toolbox - A toolbox full of miscellanious utility functions and classes. Contains commonly used structs, simple and/or generic algorithms and generic classes. There are lots of useful things in here, so you should become familiar with the package so that you don't duplicate anything.
+
+  \ref bob_config - Uses the ROS parameter server to import runtime constants into a global config variable. The current implementation is very messy and could use improvement. In the embedded system these constants will be hard coded. The usage of the current bob_config system is that it allows us to change the config variables without having to recompile.
+
+  \ref bob_frontier_exploration
+
+  \ref bob_map_algorithms - Contains some algorithms that operate on objects inside bob_grid_map.
+
+  \ref bob_lidar - Simple Lidar processing. Most Lidar have different properties. This class attempts to generalize them so that different Lidar can easily be used without having to rewrite any code. This module wil accept raw lidar data and "process" it into a format used by all the other packages in the project.
+
+
+ */ 

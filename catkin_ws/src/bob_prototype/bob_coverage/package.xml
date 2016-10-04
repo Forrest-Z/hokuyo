@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+  <name>bob_coverage</name>
+  <version>0.0.0</version>
+  <description>The bob_coverage package</description>
+
+  <maintainer email="sebastian@bobsweep.com">Sebastian Schweigert</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>bob_grid_map</build_depend> 
+  <build_depend>bob_toolbox</build_depend> 
+  <build_depend>bob_control</build_depend>
+  <build_depend>bob_config</build_depend>
+  <build_depend>bob_sensor</build_depend>
+  <build_depend>bob_control_handle</build_depend>
+  <build_depend>bob_frontier_exploration</build_depend>
+
+  <run_depend>bob_grid_map</run_depend>
+  <run_depend>bob_toolbox</run_depend>
+  <run_depend>bob_control</run_depend>
+  <run_depend>bob_config</run_depend>
+  <run_depend>bob_sensor</run_depend>
+  <run_depend>bob_control_handle</run_depend>
+  <run_depend>bob_frontier_exploration</run_depend>
+
+  <export>
+  </export>
+</package>

@@ -1,0 +1,74 @@
+/*!  \page getting_started Getting Started 
+
+ To run the demo you should have a small laptop or rpi which can fit on a kobuki (or similar) base without blocking a lidar sensor. You need to be able to ssh into this laptop over wi-fi so that you can run ROS commands.
+
+ # Compiling the code
+
+ You should move bob_prototype into your catkin src directory. ie.  ~/catkin_ws/src/bob_prototype/...
+
+ You can then compile the code using:
+
+ \code{.unparsed}
+  cd ~/catkin_ws
+  catkin_make
+ \endcode
+
+ # Setting up Lidar
+
+ Currently the system needs lidar or some similar data to run. The first step will be to setup this lidar.
+
+ Before trying to run the demo, you should first check that the Lidar is working. The easiest way to do this is to check that you are able to receive lidar data over ROS. 
+
+ There are already pre-configured lidar launch files for Rplidar and Hokuyo lidars. If you are using some other type of lidar, then you should make a similar launch file using the other launch files as an example. When you are making these launch files the transform of the lidar must be correctly published in ROS. 
+
+ The Rplidar and Hokuyo launch files are designed with the lidar facing forward, so that's how you should orient yours if you use those launch files.
+
+ ## Rplidar
+
+ If you are using rplidar, you can run the following command:
+
+ \code{.unparsed}
+  roslaunch bob_launch rplidar.launch
+ \endcode
+
+ Note about rplidar: The rplidar driver is difficult to use because the usb port is hard-coded. You must find what ttyUSB port the lidar is connected to using the linux terminal. You can also grep "ttyUSB" in the Rplidar driver (rplidar_ros) to see which one it was expecting. If these don't match then the lidar won't launch. The order you plug in the USB changes what tty will be assigned. You also sometimes need to unplug and plug it back in for some reason.
+
+ ## Hokuyo
+
+ If you are using hokuyo lidar, you can run the following command:
+
+ \code{.unparsed}
+  roslaunch bob_launch hokuyo.launch
+ \endcode
+
+ # Getting Kobuki base working
+
+ You can check if the Kobuki base works using the following command:
+
+ \code{.unparsed}
+  roslaunch bob_test keyop_drive.launch
+ \endcode
+
+ You should be able to drive the kobuki around using your keyboard. Be careful, though. If you lose wi-fi connection you may lose control of the robot and it can go wild.
+
+ After you verify the kobuki base works, mount the lidar in the center, facing forward.
+
+ It is possible to use other bases, besides kobuki. As long as the other base fills the role of kobuki and follows the same API. You may need to make an adapter to get it working.
+
+ # Running the Demo
+
+ After you setup the system you should be able to run the demo using one of the following ROS commands:
+
+ \code{.unparsed}
+  roslaunch bob_demo demo.launch
+  roslaunch bob_demo single_node_demo.launch
+ \endcode
+
+ Currently they are configured to run with rplidar. You can run them with hokuyo using:
+
+ \code{.unparsed}
+  roslaunch bob_demo demo.launch lidar:=hokuyo
+  roslaunch bob_demo single_node_demo.launch lidar:=hokuyo
+ \endcode
+
+ */ 

@@ -1,0 +1,11 @@
+/*!
+
+	\page bob_map_algorithms bob_map_algorithms
+
+	## Description
+
+	Package contains some simple algorithms that operate on maps.
+
+	This package isn't really stable yet. There's a few files, but not many.
+
+*/

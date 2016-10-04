@@ -1,0 +1,34 @@
+/*!
+
+  \page style_guide C++ Formatting Style Guide
+
+  # General
+
+  This page details the C++ formatting style used throughout the project. The main objectives are consistency and ease of readability. Here are some basic guidelines:
+
+	- Use tabs, not spaces
+	- Use camelCase for class names, function names and variables
+	- Class names are capitalized, everything else begins with lower case
+	- Opening curly brackets should appear on their own line
+	- Curly brackets don't need to be added for single line if-statements
+
+  # Comments
+
+  Comments always appear above the variable or statement, on a separate line. There should be a space between the (//) and the comment text. Do not add comments on the same line as the variable being declared, for example.
+
+ \code{.cpp}
+  // Keeps track of number of ticks
+  int count;
+
+  int count; // Keeps track of number of ticks
+
+ \endcode
+
+  You should comment your header in Doxygen style. 
+
+  Source files should not be commented using Doxygen comments, but can still use some normal comments where helpful. In general, try to keep comments short, to single lines. In some cases you need multiple lines to explain something complex, 
+
+
+  \include istop_condition.h
+
+*/

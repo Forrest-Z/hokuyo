@@ -1,0 +1,17 @@
+/*!
+
+  \page bob_config bob_config
+
+## Description
+
+This package makes use of the ROS parameter server to import configuration parameters into a globally accessible config object. 
+
+This is currently not implemented in a very good way, and needs some work.
+
+In the actual embedded system we will use hard-coded constants, but this package allows us to switch out constants while debugging. The benefit is that it isn't necessary to recompile whenever you change a config parameter.
+
+## Important Classes
+
+bob::GlobalConfig
+
+ */

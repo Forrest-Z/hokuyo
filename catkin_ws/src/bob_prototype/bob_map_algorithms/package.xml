@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+  <name>bob_map_algorithms</name>
+  <version>0.0.0</version>
+  <description>Contains custom made maps and algorithms that manipulate maps.</description>
+
+  <maintainer email="sebastian@bobsweep.com">Sebastian Schweigert</maintainer>
+
+  <license>TODO</license>
+
+  <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>bob_toolbox</build_depend>
+  <build_depend>bob_grid_map</build_depend>
+  <build_depend>bob_config</build_depend>
+  <build_depend>bob_visualization</build_depend>
+
+  <run_depend>bob_toolbox</run_depend>
+  <run_depend>bob_grid_map</run_depend>
+  <run_depend>bob_config</run_depend>
+  <run_depend>bob_visualization</run_depend>
+
+  <export>
+  </export>
+</package>

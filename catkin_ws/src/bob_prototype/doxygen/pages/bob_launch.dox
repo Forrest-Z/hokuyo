@@ -1,0 +1,29 @@
+/*!
+
+  \page bob_launch bob_launch
+
+  ## Description 
+
+  This package provides a grouping of often re-used ROS launch files. These launch files are most often used by including them in other launch files.
+
+  None of the launch files are intended to be stand-alone demos. They are intended to be building blocks that can be combined into demos or used in testing environments.
+
+  ## A note on usage
+
+  Despite the intention that these launch files are used as building blocks, they can still be run directly. For example, to test the mapping system you may launch rplidar.launch, slam.launch, kobuki_core.launch and kobuki_keyop/keyop.launch in a 4 separate terminals (Note: kobuki_keyop is a proprietary kobuki package). This would allow you to drive the robot around while generating a map. If you find that you rerun these same 4 commands frequently, then you can include them all in a single launch file. The resulting launch file should probably be placed in bob_test (or perhaps bob_demo, if it creates a demo).
+ 
+  ## Important Launch Files
+
+  Doxygen won't automatically generate links for these files, so you will need to explore the package directory to get full information.
+
+  Here are some often used launch files in this package:
+
+  kobuki_core.launch - Minimal setup for kobuki test rig.
+
+  rplidar.launch - Launches rplidar Lidar sensor driver.
+
+  hokuyo.launch - Launches hokuyo Lidar sensor driver.
+
+  basic_map.launch - Publishes a saved map to ROS. Used for testing algorithms applied to maps.
+
+ */

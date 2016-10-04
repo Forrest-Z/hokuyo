@@ -1,0 +1,16 @@
+/*!
+
+  \page bob_navigation bob_navigation
+
+## Description
+
+This module allows the robot to perform navigation tasks. Given a point in the world, the robot will drive around obstacles in order to reach that point. This point must be in the map and there should be a clear path between the robot position and that point. It is not possible to specify arbitrary points which lie in unknown space. The robot will not know how to get to those points.
+
+## Important Classes
+
+bob::DijkstraPlanner
+
+bob::NavigationManager
+
+
+ */

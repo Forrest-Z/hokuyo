@@ -1,0 +1,19 @@
+/*!
+
+	\page bob_test bob_test
+
+	## Description
+
+	Contains many short executables that are used for testing and debugging the system.
+
+	## Example Files
+
+	This package does not have many classes. Most of the files are .cpp files which contain a main() function and are compiled into executables that run inside ROS nodes. None of the files are really "important" to the system. They are just used for debugging and testing. 
+
+	frontier_test.cpp
+
+	grid_test.cpp
+
+	config_test.cpp
+
+*/

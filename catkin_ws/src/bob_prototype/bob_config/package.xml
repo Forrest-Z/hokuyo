@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>bob_config</name>
+  <version>0.0.0</version>
+  <description>Contains config files used by other packages.</description>
+
+  <maintainer email="sebastian@bobsweep.com">Sebastian Schweigert</maintainer>
+
+  <license>TODO</license>
+
+  <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Examples: -->
+  <!--   <build_depend></build_depend> -->
+  <!--   <run_depend></run_depend> -->
+  <!--   <test_depend>gtest</test_depend> -->
+
+  <export>
+  </export>
+</package>

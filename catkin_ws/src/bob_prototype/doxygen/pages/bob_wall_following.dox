@@ -1,0 +1,18 @@
+/*!
+
+  \page bob_wall_following bob_wall_following
+
+## Description
+
+This class implements a wall following algorithm.
+
+## Important Classes
+
+bob::WallFollower
+
+bob::WallFollowHeadingChooser
+
+bob::WallFollowStuckCondition
+
+
+ */

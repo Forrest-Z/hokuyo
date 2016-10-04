@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package>
+  <name>bob_boustrophedon</name>
+  <version>0.0.0</version>
+  <description>The bob_boustrophedon package</description>
+
+  <maintainer email="sebastian@todo.todo">sebastian</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>bob_control</build_depend>
+  <build_depend>bob_coverage</build_depend>
+  <build_depend>bob_lidar</build_depend>
+  <build_depend>bob_sensor</build_depend>
+  <build_depend>bob_toolbox</build_depend>
+  <build_depend>bob_control_handle</build_depend>
+  <build_depend>bob_wall_following</build_depend>
+  <build_depend>bob_system</build_depend>
+
+  <run_depend>bob_control</run_depend>
+  <run_depend>bob_coverage</run_depend>
+  <run_depend>bob_lidar</run_depend>
+  <run_depend>bob_sensor</run_depend>
+  <run_depend>bob_toolbox</run_depend>
+  <run_depend>bob_control_handle</run_depend>
+  <run_depend>bob_wall_following</run_depend>
+  <run_depend>bob_system</run_depend>
+
+  <export>
+
+  </export>
+</package>

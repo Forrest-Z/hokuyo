@@ -1,0 +1,26 @@
+<package>
+  <name>bob_slam</name>
+  <version>0.0.1</version>
+  <description>Implementation of Particle Filter SLAM algorithm</description>
+  <maintainer email="sebastian@bobsweep.com">Sebastian Schweigert</maintainer>
+  <license>SLAM solution</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>bob_lidar</build_depend>
+  <build_depend>bob_toolbox</build_depend>
+  <build_depend>bob_grid_map</build_depend>
+  <build_depend>bob_config</build_depend>
+  <build_depend>bfl</build_depend>
+  <build_depend>bob_system</build_depend>
+  <build_depend>bob_visualization</build_depend>
+
+  <run_depend>bob_lidar</run_depend>
+  <run_depend>bob_toolbox</run_depend>
+  <run_depend>bob_grid_map</run_depend>
+  <run_depend>bob_config</run_depend>
+  <run_depend>bfl</run_depend>
+  <run_depend>bob_system</run_depend>
+  <run_depend>bob_visualization</run_depend>
+
+</package>

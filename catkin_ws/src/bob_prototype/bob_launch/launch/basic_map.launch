@@ -1,0 +1,13 @@
+<launch>
+
+	<arg name="map_yaml" default="map_no_movement.yaml" />
+
+	<node name="map_server" pkg="map_server" type="map_server" args="$(find bob_test)/maps/$(arg map_yaml)"/>
+
+	<node pkg="tf" type="static_transform_publisher" name="odom_map_broadcaster" args="0 0 0 0 0 0 /map /odom 100" />
+
+	<node pkg="tf" type="static_transform_publisher" name="base_link_publisher" args="0 0 0 0 0 0 /odom /base_link 100" />
+
+	<node pkg="tf" type="static_transform_publisher" name="base_footprint_publisher" args="0 0 0 0 0 0 /base_link /base_footprint 100" />
+
+</launch>

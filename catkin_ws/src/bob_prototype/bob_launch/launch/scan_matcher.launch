@@ -1,0 +1,6 @@
+<launch>
+
+	<include file="/home/turtlebot/catkin_ws/src/phidgets_drivers/phidgets_imu/launch/imu.launch"/>
+	<include file="/home/turtlebot/catkin_ws/src/scan_tools/laser_scan_matcher/demo/demo.launch"/>
+
+</launch>

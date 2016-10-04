@@ -1,0 +1,26 @@
+/*!
+
+  \page bob_boustrophedon bob_boustrophedon 
+
+  ## Description
+
+  This package implements a "Boustrophedon" coverage algorithm. The behavior is a basic "zig-zag" coverage pattern. 
+
+  The robot will travel in a straight line until it either hits an obstacle or reaches the end of its path. 
+
+  If it reaches the end of the path it will make two quick turns before travelling along a parallel offset path in the opposite direction. 
+
+  If the robot hits an obstacle it will wall-follow the obstacle until it gets to the other side. The robot may also abandon the attempt to get to the other side, if the object is too large and blocking the path.
+
+  ## Important Classes
+
+  bob::Boustrophedon
+
+  bob::BoustrophedonSubtaskExecutor
+
+  bob::BoustrophedonTaskParameters
+
+  bob::Subtask
+
+
+ */

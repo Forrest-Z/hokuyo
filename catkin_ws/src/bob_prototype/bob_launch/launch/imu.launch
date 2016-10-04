@@ -1,0 +1,7 @@
+<launch>
+	<include file="/home/turtlebot/catkin_ws/src/phidgets_drivers/phidgets_imu/launch/imu.launch"/>
+
+<!--	<node name="imu_node" pkg="bob_ros_implementations" type="imu_node" output="screen"/> -->
+
+	<node pkg="tf" type="static_transform_publisher" name="imu_tf_broadcaster" args="0 0 0 1.57 0 0 odom imu_odom 50" /> 
+</launch>

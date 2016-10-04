@@ -1,0 +1,22 @@
+/*!
+
+  \page bob_lidar bob_lidar
+
+## Description
+
+The main purpose of this package is to generalize the lidar data.
+
+The drivers for the Lidars always publish laser scan messages in ROS format. This will contain information about the start of the beam, end of beam, etc. Another issue is that some Lidars are meant to be mounted upside down, which results in other changes to the input data. bob::LidarProcessor takes this raw data and converts the result into a standardized bob::LaserReading format, which is then used in the rest of the system. bob::LaserReading is thus Lidar-independent. Another big advantage is that the processed Lidar is now in the robot frame (ie. 0 degrees is 'forward'), which simplifies code, debugging, etc.
+
+## Important Classes
+
+bob::LaserReading
+
+bob::IScanSensorHandle
+
+bob::LidarListener
+
+bob::LidarProcessor
+
+
+ */

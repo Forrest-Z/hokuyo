@@ -1,0 +1,15 @@
+/*!
+
+  \page bob_demo bob_demo
+
+## Description
+
+Contains high-level code which combines the other packages in the system into a runnable demo.
+
+## Important Classes
+
+bob::Demo
+
+The rest of the files are launch files or simple executables not defined by a Class. There aren't many files and most of them are important.
+
+ */

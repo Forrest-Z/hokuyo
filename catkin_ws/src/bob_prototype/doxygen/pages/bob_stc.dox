@@ -1,0 +1,38 @@
+/*!
+
+  \page bob_stc bob_stc
+
+## Description
+
+Implements a Spanning Tree Coverage (STC) algorithm.
+
+The easiest way to understand this algorithm is to know the steps it performs:
+
+1. An area to cover is given to the algorithm.
+
+2. A grid is overlaid on top of the area. This grid has cell width twice the diameter of the robot. A cell of the grid is filled in if overlaps some of the area to cover, but does not overlap any obstacles in the map. Generating these grids is a currently not currently done very well efficiently in the code. That is a main source of potential future improvements in this algorithm.
+
+3. The grid is split up into groupings so that there is a continuous path connecting all the cells in each group.
+
+4. Spanning trees are generated for each grouping. The nodes for the spanning trees are the center of the cells. Also, each node can only connect to the adjacent nodes. Step 3 ensures that it is always possible to generate a spanning tree for each grouping of cells. Any spanning tree will cover the area, but the path the robot takes depends on the spanning tree chosen. bob::LowBendTreeBuilder builds spanning trees from grids and attempts to minimize the number of bends in final robot path. This is the tree building algorithm that we use in the prototype. bob::ArbitraryTreeBuilder builds spanning trees from grids in a completely arbitrary way. That tree building algorithm was developed long ago as a proof of concept for the STC algorithm and isn't used in practice.
+
+5. A path is generated around the outside of the spanning tree. This path becomes the coverage path for the algorithm.
+
+6. The paths for each grouping are combined.
+
+As the robot drives along this path it will also be following the spanning tree on one side. For example, the robot might follow the spanning tree with the tree always existing on its left side. The resulting path will cover all the cells in the grouping and return back to the start point. All of the area will be covered only once.
+
+The grid width can be adjusted so that it is less than twice the diameter of the robot. This will result in some areas being covered twice due to the overlap on the left and right edges of the robot. However, this reduced grid width has two advantages. First of all, it allows grids to be generated in tighter spaces, improving the behavior of STC in those spaces. Second of all, it allows some overlap in coverage which is good because otherwise the robot might miss some small areas.
+
+## Important Classes
+
+bob::STCPlanner
+
+bob::OptimalSTCGenerator
+
+bob::GridGenerator
+
+bob::STCPlanExecutor
+
+
+ */

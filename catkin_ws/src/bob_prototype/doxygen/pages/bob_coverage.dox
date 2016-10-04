@@ -1,0 +1,17 @@
+/*!
+
+  \page bob_coverage bob_coverage
+
+  ## Description 
+
+  This package contains coverage classes and functions that are shared amongst all coverage algorithms.
+
+  ## Important Classes
+
+  bob::CoverageTracker
+
+  bob::DiscreteArea
+
+  bob::ICoverageAlgorithm
+
+ */

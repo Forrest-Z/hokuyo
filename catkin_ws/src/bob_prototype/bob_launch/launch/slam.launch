@@ -1,0 +1,5 @@
+<launch>
+
+	<node pkg="bob_slam" type="slam" name="slam" output="screen" />
+
+</launch>

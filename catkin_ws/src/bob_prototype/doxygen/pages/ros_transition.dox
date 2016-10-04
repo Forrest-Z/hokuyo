@@ -1,0 +1,58 @@
+/*!
+
+  \page ros_transition ROS Transition Page
+
+  # Classes that use lots of memory
+
+  Here are listed classes which consume lots of memory resources. There are opportunities for optimization.
+
+  bob::RawMap - Templated base class for grid maps. Requires a lot of data to store map.
+
+  bob::DijkstraPlanner - Contains a RawMap used for planning.
+
+  bob::DiscreteArea - A hashtable of an area. For small disparate areas it is much more efficient than a RawMap of booleans. However, for large continuous areas it may be less efficient than a RawMap. This needs to be investigated and profiled.
+
+  # Classes that are processor intensive
+
+  Here are listed classes which require a lot of MIPS to run to completion. There are opportunities for optimization. 
+
+  bob::GridWavefrontIterator - Abstract class for "wavefront" algorithms that expands over the map in order to locate important points. 
+
+  bob::GridWavefrontFullIterator - Implementation of wavefront algorithm, that stores all the visited points in a closed set.
+	
+  bob::GridWavefrontShellIterator - Implementation of wavefront algorith, that stores the closed points in a thin "shell" of points. This is done to conserve memory. Memory is conserved because the size of the closed set grows with O(n) of the explored radius, in comparison to O(n^2) for the WavefrontFullIterator algorithm.
+
+  bob::ICPScanMatcher - Matches a laser sensor scan to the map. Plenty of floating point operations, especially with high numbers of beams.
+
+  bob::MapFiller - Fills a map using data from laser sensor.
+
+  bob::DijkstraPlanner - Building a potential map may be a processor intensive task if the robot is far from the goal.
+
+  # Classes that use boost and must be replaced with FreeRTOS
+
+  The following classes use boost or perhaps some other library. These library functions should be replaced with FreeRTOS function calls.
+
+  bob::PeriodicThreader - Uses boost threads to run a thread periodically.
+
+  bob::InternallyLocked - Uses boost mutex to enable a resource to be internally lockable.
+
+  bob::ExternallyLocked - Uses boost mutex to enable a resource to be externally lockable.
+
+  bob::StrictLock - Used in conjunction with ExternallyLocked.
+
+  # Classes/functions that may need replacement
+
+  boost::bind
+
+  boost::ref
+
+  std::unordered_set
+
+  std::unordered_map
+
+  boost::shared_ptr
+
+  stdlib 
+
+
+*/

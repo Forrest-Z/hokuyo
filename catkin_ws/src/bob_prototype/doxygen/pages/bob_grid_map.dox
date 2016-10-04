@@ -1,0 +1,25 @@
+/*!
+
+  \page bob_grid_map bob_grid_map
+
+## Description
+
+Contains classes that define a discrete grid map of the world.
+
+The map is modified by the SLAM algorithm through the IProbabilityMap interface. The data is accessed through the IObstacleMap interface. 
+
+Whenever the map is updated an "inflation" step is performed. This algorithm will examine the entire map and "inflate" the obstacles. For each point in the map the distance to the nearest obstacle is calculated. This inflation data can then be accessed through the IObstacleDistanceMap interface.
+
+## Important Classes
+
+bob::RawMap
+
+bob::IProbabilityMap
+
+bob::IObstacleDistanceMap
+
+bob::Costmap
+
+bob::LockableMap
+
+ */

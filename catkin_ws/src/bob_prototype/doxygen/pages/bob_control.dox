@@ -1,0 +1,47 @@
+/*!
+
+  \page bob_control bob_control
+
+## Description
+
+Contains low-level control algorithms. These algorithms don't do much on their own. Here's some examples:
+
+ * Use PD or PID control to track a line
+
+ * Execute a curve at a given radius and direction
+
+ * "Hug" a wall (drive along a wall)
+
+ * Rotate in place (ie. without moving forward or backward)
+
+ * Accelerate or decellerate
+
+## A Note About Intended Usage
+
+These simple commands are meant to be the building blocks for more complex behaviors. These elements are rarely used in high-level code directly. Instead they are used in "composite behaviors" like navigation and wall following.
+
+For example, a class in the navigation package may generate a path defined by multiple points. The system could then take the following steps to execute the action:
+
+1. Rotate in place to face towards the first point. 
+
+2. Track the line between the previous point and next point.
+
+3. Curve at the end to face the next point.
+
+4. If not at the final point, repeat steps 2 and 3.
+
+5. Decellerate to the final point.
+
+The wall following task would consist mainly of wall-hugging tasks. Occasionally the robot will become stuck at which point it will execute a heading-rotation before continuing along with wall hugging.
+
+## Important Classes
+
+bob::SimpleCommander
+
+bob::ControllerRunner
+
+bob::IController
+
+bob::IStopCondition
+
+ */

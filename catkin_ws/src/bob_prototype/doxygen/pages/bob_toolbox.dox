@@ -1,0 +1,50 @@
+/*!
+
+	\page bob_toolbox bob_toolbox
+
+	## Description
+
+	This is a basic toolbox package. There's a ton of useful things in here.
+
+	## Important Files/Classes
+
+	This is not an exhaustive list!
+
+	# Math
+
+	geometry.h
+
+	point_geometry.h
+
+	line_geometry.h	
+
+	newtonian_equations.h
+	
+	# Common Structs
+
+	world_point.h
+
+	bob::Line
+
+	bob::GenericPoint
+
+	bob::GenericVector
+
+	bob::LineSegment
+
+	# Templated Algorithms
+
+	grid_algorithms.h
+ 
+	grid_wavefront_iterator.h
+
+	raytrace.h
+
+	# Templated Classes
+
+	bob::InternallyLocked
+
+	bob::ExternallyLocked
+
+
+*/

@@ -1,0 +1,18 @@
+<!--
+  This launch file enables all the necessary kobuki system. 
+ -->
+<launch>
+
+	<node pkg="tf" type="static_transform_publisher" name="base_footprint_broadcaster" args="0 0 -0.04 0 0 0 base_link base_footprint 100" />  
+	<!-- Publish base_footprint - odom transforms -->
+	<arg name="kobuki_publish_tf" default="true"/> 
+
+	<node pkg="nodelet" type="nodelet" name="mobile_base_nodelet_manager" args="manager"/>
+	<node pkg="nodelet" type="nodelet" name="mobile_base" args="load kobuki_node/KobukiNodelet mobile_base_nodelet_manager" >
+		<rosparam file="$(find bob_config)/param/kobuki.yaml" command="load"/>
+		<param name="publish_tf" value="$(arg kobuki_publish_tf)"/>
+		<remap from="mobile_base/odom" to="odom"/>
+		<remap from="mobile_base/joint_states" to="joint_states"/>
+	</node>
+
+</launch>
